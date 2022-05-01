@@ -8,7 +8,7 @@
 }
 .max-width{
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 0 80px;
     margin: auto;
 }
 
@@ -16,9 +16,16 @@
 .navbar{
     position: fixed;
     width: 100%;
-    z-index: 999;
+    /* background: gold; */
+    /* z-index: 999; */
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky
+{
+    padding: 30px 0;
+    background: crimson;
 }
 
 .navbar .max-width{
@@ -27,7 +34,7 @@
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: darkmagenta;
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
@@ -40,8 +47,53 @@
 }
 .navbar .menu li a{
     display: block;
-    color: green;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover
+{
+    color: crimson;
+}
+
+
+/* home section sytling */
+
+.home
+{
+    display: flex;
+    background: url("./images/banner.png") no-repeat;
+    background-size: 1300px 700px;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width
+{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1
+{
+    font-size: 27px;
+}
+.home .home-content .text-2
+{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3
+{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span
+{
+    color: crimson;
+    font-weight: 500;
 }
