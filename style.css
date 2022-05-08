@@ -168,6 +168,7 @@ section .title::after{
     background: url("./images/banner.png") no-repeat center;
     height: 100vh;
     color: #fff;
+    width: 100%;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -372,7 +373,7 @@ section .title::after{
     width: 80%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 80%;
 }
 .skills-content .right .mysql::before{
     width: 70%;

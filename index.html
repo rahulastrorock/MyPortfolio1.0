@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <script src="https://kit.fontawesome.com/a0bc815903.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Coding Profiles</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#teams">Coding Profiles</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fa-solid fa-bars"></i>
@@ -41,7 +45,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Rahul Singh</div>
-                <div class="text-3">And I'm a <span>CS Undergrad</span></div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="#">Hire Me</a>
             </div>
         </div>
@@ -56,15 +60,19 @@
                     <img src="./images/profile-1.jpeg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Rahul and I'm a <span class="typing-2">CSE Undergrad Student</span></div>
-                    <p>Rahul is a third year Computer Science Engineering Student at Jaypee University Of Engineering and Technology, Guna. He is tech enthusiastic guy and have deep interest in Ai/ML and web Development. He is also very passionate about problem Solving. Beside tech his other interests are exploring Cosmos. His expertise lies in Machine Leearning , Deep Learning, Problem Solving, Data Structures and Algorithms Web development (MERN).</p>
+                    <div class="text">I'm Rahul and I'm a <span class="typing-2"></span></div>
+                    <p>Rahul is a third year Computer Science Engineering Student at Jaypee University Of Engineering
+                        and Technology, Guna. He is tech enthusiastic guy and have deep interest in Ai/ML and web
+                        Development. He is also very passionate about problem Solving. Beside tech his other interests
+                        are exploring Cosmos. His expertise lies in Machine Leearning , Deep Learning, Problem Solving,
+                        Data Structures and Algorithms Web development (MERN).</p>
                     <a href="#">Download CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-     
+
     <!-- My Projects section start -->
     <section class="services" id="services">
         <div class="max-width">
@@ -73,37 +81,47 @@
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <div class="text">Online IDE</div>
-                        <p>It's an online IDE using React.js as frontend and Express.js as backend.</p>
+                        <a href="#" target="_self">
+                        <div class="text" style="color: white">Online IDE</div>
+                        <p style="color: white">It's an online IDE using React.js as frontend and Express.js as backend.</p>
+                    </a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text">Stock Market Predcition System</div>
-                        <p>It is elementary stock market prediction system built using Long Short Term Memory(LSTM) neural network.</p>
+                        <a href="https://github.com/rahulastrorock/StockMarketPrediction" target="_blank">
+                        <div class="text" style="color: white">Stock Market Predcition System</div>
+                        <p style="color: white">It is elementary stock market prediction system built using Long Short Term Memory(LSTM)
+                            neural network.</p>
+                        </a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fa-solid fa-key"></i>
-                        <div class="text">Image in Image Steganography</div>
-                        <p>Image Steganography is the process of hiding secret data in some
+                        <a href="https://github.com/rahulastrorock/Image-In-Image-Steganography" target="_blank">
+                        <div class="text" style="color: white">Image in Image Steganography</div>
+                        <p style="color: white">Image Steganography is the process of hiding secret data in some
                             image</p>
+                        </a>
                     </div>
                 </div>
-               </div>
             </div>
         </div>
+        </div>
     </section>
-      <!-- skills section start -->
-      <section class="skills" id="skills">
+    <!-- skills section start -->
+    <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">My skills</h2>
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est
+                        recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi.
+                        Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam
+                        alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
                     <a href="#">Read more</a>
                 </div>
                 <div class="column right">
@@ -130,8 +148,8 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>PHP</span>
-                            <span>50%</span>
+                            <span>Data Structures and Algorithms</span>
+                            <span>80%</span>
                         </div>
                         <div class="line php"></div>
                     </div>
@@ -160,30 +178,40 @@
                 </div> -->
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-2.jpeg" alt="">
+                        <a href="https://www.codechef.com/users/astrocoder" target="_blank">
+                            <img src="images/profile-2.jpeg" alt="">
+                        </a>
+
+
                         <div class="text">CodeChef</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
+                        <a href="https://codeforces.com/profile/rahulastrorock" target="_blank">
+                            <img src="images/profile-3.jpeg" alt="">
+                        </a>
                         <div class="text">Codeforces</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
+                        <a href="https://www.linkedin.com/in/astrorock/" target="_blank">
+                            <img src="images/profile-4.jpeg" alt="">
+                        </a>
                         <div class="text">Linkedin</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-5.jpeg" alt="" style="background-color: white;">
+                        <a href="https://github.com/rahulastrorock" target="_blank">
+                            <img src="images/profile-5.jpeg" alt="" style="background-color: white;">
+                        </a>
                         <div class="text">Github</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                     </div>
                 </div>
             </div>
@@ -196,7 +224,8 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga
+                        corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -248,10 +277,12 @@
     </section>
     <!-- footer section start -->
     <footer>
-        <span>Rahul Singh <a href="#">astrorock</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+        <span>Rahul Singh <a href="#">astrorock</a> | <span class="far fa-copyright"></span> 2022 All rights
+            reserved.</span>
     </footer>
 
     <script src="./script.js"></script>
 
 </body>
+
 </html>
